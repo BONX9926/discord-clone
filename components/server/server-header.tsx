@@ -25,7 +25,7 @@ interface ServerHaderProps {
   role?: MemberRole;
 }
 
-const ServerHeader = ({ server, role }: ServerHaderProps) => {
+export const ServerHeader = ({ server, role }: ServerHaderProps) => {
   const { onOpen } = useModal();
 
   const isAdmin = role === MemberRole.ADMIN;
@@ -99,5 +99,3 @@ const ServerHeader = ({ server, role }: ServerHaderProps) => {
     </DropdownMenu>
   );
 };
-
-export default ServerHeader;
