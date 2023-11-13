@@ -6,8 +6,6 @@ import { useState } from "react";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -59,12 +57,8 @@ export const InviteModal = () => {
       <DialogContent className="bg-white text-black p-0 overflow-auto">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Customize your server
+            Invite Friends
           </DialogTitle>
-          <DialogDescription className="text-center text-zinc-500">
-            Give your server a personality with a name ans ans image. You can
-            always change it later.
-          </DialogDescription>
         </DialogHeader>
         <div className="p-6">
           <Label className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70">
