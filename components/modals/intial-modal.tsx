@@ -114,10 +114,10 @@ export const InitialModal = () => {
                     </FormLabel>
                     <FormControl>
                       <Input
+                        {...field}
                         disabled={isLoading}
                         className="bg-zinc-300/50 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
                         placeholder="Enter server name"
-                        {...field}
                       />
                     </FormControl>
                     <FormMessage />
